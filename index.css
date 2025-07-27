@@ -1,0 +1,88 @@
+@tailwind  base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+}
+ 
+
+:root {
+  --color-primary: #00d09c;
+  --color-primary-dark: #00b386;
+  --color-secondary: #44475b;
+  --color-heading: #2a2f4e;
+  --color-light: #f0f8f6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-secondary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-heading {
+  color: var(--color-heading);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.btn-primary {
+  @apply px-6 py-2.5 bg-primary text-white font-medium rounded-lg shadow-sm hover:bg-primary-dark transition-colors;
+}
+
+.btn-secondary {
+  @apply px-6 py-2.5 bg-white text-secondary font-medium rounded-lg shadow-sm border border-gray-300 hover:bg-gray-50 transition-colors;
+}
+
+.btn-ghost {
+  @apply text-primary font-medium hover:text-primary-dark transition-colors;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #00d09c;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ 
